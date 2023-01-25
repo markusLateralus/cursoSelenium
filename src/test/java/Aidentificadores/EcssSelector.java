@@ -1,4 +1,4 @@
-package Ainiciacion;
+package Aidentificadores;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,7 +26,9 @@ public class EcssSelector {
 	public void test() throws InterruptedException {
 
 //buscar por cssSelector, usando el lenguaje JQuery
-/*
+/*    
+ *   elemento.(clase)
+ *   elemento#(id)
  * 
  *   div#p-logo  -> busca un DIV cuyo id sea "p-logo"
  *   
@@ -40,13 +42,28 @@ public class EcssSelector {
  * 
  * [value$='ada']  -> busca un elemento cuyo valor TERMINA por "ada"
  * 
- * [name^='com'][value$='ada']  -> busca un elemento cuyo name empieza por com Y cuyo value termina por ada. CONCATENAMOS
+ * input[name^='com'][value$='ada']  -> busca un elemento input cuyo name empieza por com Y cuyo value termina por ada. CONCATENAMOS
  * 
  * a[href="https//..."]  ->devuelve el Link 
  * 
  * div[aria-labelledby="dropdown-basic"]>a[href="#/action-2"] --> Buscamos en el div un HIJO que es de tipo a
  * 
- * 
+ *  img:not([alt])) -> todos los elementos IMP que NO tiene el atributo alt. Muy usado con los atributos tiene valores aleatorios
+ *  
+ *  ^=   input[id^='ctrl']        ->empieza por:
+ *  $=   input[id$='_userName']   -> termina por
+ *  *=   Input[id*='userName']    ->contiene  
+ *  
+ *  
+ *  
+ *  - Buscar por texto que contiene el elemento:
+ *    td:contains('Item 1')  --> busca un elemento TD que tiene como texto "item 1". Es OBSOLETO
+ *    td[innerText="Item 1"]  --> igual. NO funciona con FIREFOX
+ *    td[textContent='Item 1']--> igual.
+ *    
+ *    
+ *    
+ *  
  * */		
 		
 		WebElement parrafo=driver.findElement(By.cssSelector("div#mw-content-text>div.mw-parser-output>p:nth-of-type(3)"));

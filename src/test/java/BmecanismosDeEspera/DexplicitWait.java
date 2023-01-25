@@ -2,6 +2,7 @@ package BmecanismosDeEspera;
 
 
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterEach;
@@ -25,7 +26,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *  WebDriverWait wait=new WebDriverWait(driver,10);
  *  WebElement boton=wait.until(ExpectedConditions.elementToBeClickable(By.id("boton1")));
  *  En caso de agotarse el tiempo se lanzará la excepción : TimeOutException
- *  
+ *   
  * 
  * 
  * */
@@ -46,8 +47,8 @@ public class DexplicitWait {
 	
 	@Test
 	public void test() throws InterruptedException {
-		//ExplicitWait lo configuramos con 10 segundos de espera, y 2 segundos de polling
-		WebDriverWait waitExplicito=new WebDriverWait(driver,20,5000);
+		//ExplicitWait lo configuramos con 10 segundos de espera,
+		WebDriverWait waitExplicito=new WebDriverWait(driver,Duration.ofSeconds(10));
 		//ExplicitWait espera hasta que el elemento con ID sea cliclable. Ya que el botón hasta los 6 segundos está programado para estar desabilitado.
 		WebElement botonExplicitWait=waitExplicito.until(ExpectedConditions.elementToBeClickable(By.id("explicitWaitButton")));
 		botonExplicitWait.click();

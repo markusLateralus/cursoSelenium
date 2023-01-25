@@ -23,7 +23,7 @@ import org.openqa.selenium.support.ui.Select;
  * */
 
 
-public class CcomboBoxSimple {
+public class CSelectSimple {
 
 	private WebDriver driver;
 	

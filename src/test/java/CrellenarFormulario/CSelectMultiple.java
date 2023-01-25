@@ -19,9 +19,9 @@ import org.openqa.selenium.support.ui.Select;
  * 2º seleccionar el valor deseado mediante el índice, el valor o el texto asociado
  * 
  * */
+ 
 
-
-public class CcomboBoxMultiple {
+public class CSelectMultiple {
 
 	private WebDriver driver;
 	

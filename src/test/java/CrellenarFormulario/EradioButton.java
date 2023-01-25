@@ -48,6 +48,8 @@ public class EradioButton {
 		WebElement radioButtonAgua=driver.findElement(By.xpath("//input[@name='bebida' and @value='agua']"));
 		WebElement radioButtonDorada=driver.findElement(By.cssSelector("[name^='com'][value$='ada']"));
 		WebElement boton=driver.findElement(By.id("enviaRadiobutton"));
+		
+		List<WebElement>radiobuttonssss=driver.findElements(By.name(""));
 	
 		/*for(WebElement elemento:checkboxs) {
 			elemento.click();

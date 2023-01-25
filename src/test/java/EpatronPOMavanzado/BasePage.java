@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * 
  * De este modo actualizando esta clase se actualizan las clases hijas
  * 
- * 
+ *  
  * 
  * */
 public class BasePage {

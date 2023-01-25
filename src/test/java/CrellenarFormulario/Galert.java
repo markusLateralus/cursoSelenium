@@ -24,7 +24,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class Galert {
-
 	private WebDriver driver;
 	
 	@BeforeEach

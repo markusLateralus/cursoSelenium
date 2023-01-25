@@ -16,7 +16,7 @@ package Ainiciacion;
  *       git init
  *       git add *
  *       git commit -m "descripcion de lo que voy a guardar"
- *    
+ *       git branch -M main  <<--nuevo
  *       git remote add origin https...
  *       git push origin master
  *       agregar credenciales   usuario markusLateralus   contraseña markus01081982 o tanin01081982

@@ -51,7 +51,10 @@ public class DcheckBox {
 		checkboxs.get(0).click();
 		Thread.sleep(1000);
 		
+		
+		
 		for(WebElement e:checkboxs) {
+		
 			System.out.println(e.isSelected());
 			Thread.sleep(1000);
 		}

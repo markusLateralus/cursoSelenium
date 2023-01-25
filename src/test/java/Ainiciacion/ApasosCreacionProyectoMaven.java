@@ -16,7 +16,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * 2º Instalar JDK
  * 3º Crear una variable de entorno con el nombre JAVA_JDK y que apunte a la directorio:C:\Program Files\Java\jdk-17.0.3.1
  * 4º En la variable de entorno llamada PATH, le agregamos el siguiente directorio: C:\Program Files\Java\jdk-17.0.3.1\bin
- * 5º Crear un proyecto nuevo con MAVEN, create a simple project, Group ID(nombre de nuestra empresa) Artifact ID (nombre del artifact que estamos creando)
+ * 5º Crear un proyecto nuevo con MAVEN, create a simple project, Group ID(nombre de nuestra empresa) 
+ * Artifact ID (nombre del artifact que estamos creando)
  * 6º En el archivo pom.xml agregamos 2 dependencias: selenium y JUnit. 
  *    En caso de que no se instale automaticamente, usar comando: $ mvn dependency:resolve
  * 7º Dentro de src/test/java, creamos el primer paquete llamado Ainiciacion.

@@ -20,7 +20,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
 public class PrincipalTest {
-	
+	 
 	private WebDriver driver;
 	private GooglePage googlePage;
   @Test(description="aceptamos las cookies, buscamos wikipedia y verifica el título")

@@ -1,9 +1,13 @@
 package Ainiciacion;
 
-
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+/*
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+*/
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
@@ -13,10 +17,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class BnavegarWikipediaGetTittle {
-
 	private WebDriver driver;
 	
-	@BeforeEach
+	@Before
 	public void configurar() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		driver= new ChromeDriver(); //creamos nueva ventana
@@ -30,14 +33,24 @@ public class BnavegarWikipediaGetTittle {
 	}
 	
 	@Test
-	public void test() {
+	public void testNavegador() {
+		
 	String titulo=driver.getTitle();//Wikipedia, la enciclopedia libre
 	System.out.println(titulo);
+	
+	//retroceder una pagina en el navegador
+		driver.navigate().back();
+	
+	//avanzar una una pagina en el navegador
+		driver.navigate().forward();
+		
+	//refrescar la pagina
+		driver.navigate().refresh();
 	}
 	
-	@AfterEach
+	@After
 	public void finalizar(){
-		driver.quit();
+		//driver.quit();
 	}
 
 }
